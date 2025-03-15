@@ -12,7 +12,7 @@ export default function ProjectsSection() {
         "A personal portfolio website built with Next.js, TypeScript, and Shadcn UI, featuring an elegant UI to highlight work experience, projects, and technical expertise.",
       image: "/portfolio.png",
       tags: ["Next.js", "TypeScript", "Shadcn UI", "Tailwind CSS"],
-      link: "https://empaiss.my.id/",
+      link: "https://www.empaiss.my.id/",
     },
     {
       title: "GoEvent",
@@ -28,7 +28,7 @@ export default function ProjectsSection() {
         "A task management application equipped with a WhatsApp reminder feature, ensuring users never miss their important tasks.",
       image: "/watask.png",
       tags: ["Next.js", "TypeScript", "MongoDB", "Express.js", "WhatsApp Web.js", "Hero UI"],
-      link: "https://watask-v2.vercel.app/",
+      link: "https://watask.empaiss.my.id/",
     },
   ];
   
