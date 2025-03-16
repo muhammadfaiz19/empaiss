@@ -64,7 +64,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-pt-[3.5rem]" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="any"/>
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         {/* JSON-LD Schema Markup for SEO */}
