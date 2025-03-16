@@ -69,7 +69,7 @@ export default function HeroSection() {
           <div className="absolute inset-[10%] rounded-full bg-muted" />
           <Image
             src="/profile.png"
-            alt="Profile"
+            alt="empaiss"
             width={400}
             height={400}
             className="rounded-full relative z-10 p-2"

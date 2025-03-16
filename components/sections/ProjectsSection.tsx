@@ -46,7 +46,8 @@ export default function ProjectsSection() {
               <Image
                 src={project.image || "/placeholder.svg"}
                 alt={project.title}
-                sizes="100%"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                loading="lazy"
                 fill
                 className="object-cover transition-transform group-hover:scale-105"
               />

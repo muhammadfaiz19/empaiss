@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://empaiss.my.id/sitemap.xml
