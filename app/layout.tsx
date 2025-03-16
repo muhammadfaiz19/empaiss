@@ -26,12 +26,12 @@ export const metadata: Metadata = {
     "Full Stack Developer",
     "Portfolio",
   ],
-  authors: [{ name: "Muhammad Faiz", url: "https://empaiss.my.id" }],
+  authors: [{ name: "Muhammad Faiz", url: "https://www.empaiss.my.id" }],
   openGraph: {
     title: "Muhammad Faiz",
     description:
       "The portfolio of Muhammad Faiz, showcasing experience, projects, and technical expertise in software development.",
-    url: "https://empaiss.my.id",
+    url: "https://www.empaiss.my.id",
     siteName: "Muhammad Faiz",
     images: [
       {
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
       "Muhammad Faiz, a Software Engineer from Cirebon, Indonesia. Experienced in web development using Next.js, TypeScript, Laravel, and other modern technologies.",
     images: ["/thumbnail.png"],
   },
-  metadataBase: new URL("https://empaiss.my.id"),
+  metadataBase: new URL("https://www.empaiss.my.id"),
 };
 
 export default function RootLayout({
@@ -71,18 +71,17 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Muhammad Faiz",
-              url: "https://empaiss.my.id",
+              url: "https://www.empaiss.my.id",
               sameAs: [
                 "https://github.com/muhammadfaiz19",
                 "https://www.linkedin.com/in/muhammad-faiz-",
                 "https://twitter.com/empaiss",
-                "https://medium.com/@empaiss",
               ],
               jobTitle: "Software Engineer",
               email: "mailto:mfaiz2727@gmail.com",
               description:
                 "Muhammad Faiz, a Software Engineer from Cirebon, Indonesia. Experienced in web development using Next.js, TypeScript, Laravel, and other modern technologies.",
-              image: "https://empaiss.my.id/thumbnail.png",
+              image: "https://www.empaiss.my.id/thumbnail.png",
             }),
           }}
         />
