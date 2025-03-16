@@ -13,7 +13,7 @@ const familjenGrotesk = Familjen_Grotesk({
 export const metadata: Metadata = {
   title: "Muhammad Faiz",
   description:
-    "Muhammad Faiz, a Software Engineer from Cirebon, Indonesia. Experienced in web development using Next.js, TypeScript, Laravel, and other modern technologies.",
+    "Muhammad Faiz, a Software Engineer from Cirebon, Indonesia. Experienced in web development using Next.js, TypeScript, Express.js, Laravel, and other modern technologies.",
   keywords: [
     "Muhammad Faiz",
     "empaiss",
@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     "Laravel",
     "Full Stack Developer",
     "Portfolio",
+    "Express.js",
   ],
   authors: [{ name: "Muhammad Faiz", url: "https://www.empaiss.my.id" }],
   openGraph: {
@@ -49,7 +50,7 @@ export const metadata: Metadata = {
     site: "@empaiss",
     title: "Muhammad Faiz",
     description:
-      "Muhammad Faiz, a Software Engineer from Cirebon, Indonesia. Experienced in web development using Next.js, TypeScript, Laravel, and other modern technologies.",
+      "Muhammad Faiz, a Software Engineer from Cirebon, Indonesia. Experienced in web development using Next.js, TypeScript, Express.js, Laravel, and other modern technologies.",
     images: ["/thumbnail.png"],
   },
   metadataBase: new URL("https://www.empaiss.my.id"),
@@ -63,6 +64,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-pt-[3.5rem]" suppressHydrationWarning>
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         {/* JSON-LD Schema Markup for SEO */}
         <script
           type="application/ld+json"
@@ -80,7 +84,7 @@ export default function RootLayout({
               jobTitle: "Software Engineer",
               email: "mailto:mfaiz2727@gmail.com",
               description:
-                "Muhammad Faiz, a Software Engineer from Cirebon, Indonesia. Experienced in web development using Next.js, TypeScript, Laravel, and other modern technologies.",
+                "Muhammad Faiz, a Software Engineer from Cirebon, Indonesia. Experienced in web development using Next.js, TypeScript, Express.js, Laravel, and other modern technologies.",
               image: "https://www.empaiss.my.id/thumbnail.png",
             }),
           }}
