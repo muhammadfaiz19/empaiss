@@ -7,13 +7,13 @@ import { Badge } from "@/components/ui/badge";
 export default function ProjectsSection() {
   const projects = [
     {
-      title: "Portfolio Website",
+      title: "Amalia Hijab",
       description:
-        "A personal portfolio website built with Next.js, TypeScript, and Shadcn UI, featuring an elegant UI to highlight work experience, projects, and technical expertise.",
-      image: "/portfolio.webp",
-      tags: ["Next.js", "TypeScript", "Shadcn UI", "Tailwind CSS", "Nodemailer"],
-      link: "https://www.empaiss.my.id/",
-    },
+        "A stylish catalog and store profile website for hijab products, built with Next.js, TypeScript, and Shadcn UI, offering an elegant showcase of collections and store information.",
+      image: "/amalia-hijab.webp",
+      tags: ["Next.js", "TypeScript", "Shadcn UI", "Tailwind CSS"],
+      link: "https://amalia-hijab.vercel.app/",
+    },    
     {
       title: "GoEvent",
       description:
