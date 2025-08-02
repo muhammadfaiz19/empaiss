@@ -20,7 +20,7 @@ export default function ProjectsSection() {
         "PostgreSQL",
         "TensorFlow",
       ],
-      link: "https://diamate-fe.vercel.app/",
+      link: "https://github.com/DiaMate-Organization",
     },
     {
       title: "GoEvent",
