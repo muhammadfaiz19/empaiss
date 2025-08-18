@@ -10,15 +10,17 @@ export default function SkillsSection() {
     "Next.js",
     "Node.js",
     "Express.js",
+    "Hapi.js",
     "Laravel",
     "MongoDB",
     "MySQL",
+    "PostgreSQL",
+    "Supabase",
     "Git",
     "GitHub",
     "Postman",
     "CI/CD",
     "Docker",
-
   ];
   
   return (
