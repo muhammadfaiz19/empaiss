@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import ChatBot from "./ChatBot";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -48,6 +49,7 @@ export default function Layout({ children }: LayoutProps) {
       <Header theme={theme} toggleTheme={toggleTheme} />
       <main className="container mx-auto px-4 py-8">{children}</main>
       <Footer />
+      <ChatBot />
     </div>
   );
 }

@@ -2,25 +2,40 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function JourneySection() {
   const experiences = [
-    {
-      period: "Feb 2025 - Present",
-      role: "Front-End and Back-End Developer Cohort",
-      company: "Coding Camp powered by DBS Foundation",
-      description:
-        "Undergoing comprehensive training in front-end and back-end development, learning best practices in web application development.",
-    },
-    {
-      period: "Sep 2024 - Dec 2024",
-      role: "Fullstack Developer Mentee",
-      company: "Productzilla Academy",
-      description: [
-        "Acted as the PIC Engineer in the final project, managing timelines, task priorities, and team workflows.",
-        "Contributed to frontend development using React.js, TypeScript, and Tailwind CSS.",
-        "Collaborated with the team to implement features and enhance the user interface design.",
-        "Created clear documentation to ensure effective communication and workflow efficiency.",
-      ],
-    },
-  ];
+  {
+    period: "Apr 2025 - Present",
+    role: "Web Developer Intern",
+    company: "Pusat Data dan Informasi – Universitas Muhammadiyah Cirebon",
+    description: [
+      "Assigned to develop an internal IT Ticketing System as a solo project to support the university’s IT service operations.",
+      "Built a full-stack web application using Next.js, TypeScript, Express.js, PostgreSQL, and Supabase.",
+      "Improved internal IT issue tracking efficiency and reduced manual handling through automation."
+    ],
+  },
+  {
+    period: "Feb 2025 - Jul 2025",
+    role: "Front-End & Back-End Developer Cohort",
+    company: "Coding Camp powered by DBS Foundation",
+    description: [
+      "Selected as 1 of 3,000 participants from 63,000+ applicants across Indonesia.",
+      "Graduated with Distinction, awarded to the top 10% of learners with zero red flags.",
+      "Built DiaMate, a web-based platform that helps diabetes patients manage their health through self-monitoring tools and educational content.",
+      "Integrated frontend with RESTful APIs to implement features like authentication, medical record tracking, and personalized dashboards."
+    ],
+  },
+  {
+    period: "Sep 2024 - Dec 2024",
+    role: "Fullstack Developer Mentee",
+    company: "Productzilla Academy",
+    description: [
+      "Served as Project-in-Charge (PIC) Engineer for the final project, managing timelines, priorities, and team workflows.",
+      "Contributed to frontend development using React, TypeScript, and Tailwind CSS.",
+      "Collaborated on feature implementation and UI/UX enhancements.",
+      "Created clear documentation to ensure effective communication and smooth project delivery."
+    ],
+  },
+];
+
 
   // Education data
   const education = [
@@ -38,7 +53,7 @@ export default function JourneySection() {
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold">My Journey</h2>
         <p className="text-muted-foreground mt-2">
-          Professional experience and education
+          A timeline of my learning and building journey
         </p>
       </div>
 

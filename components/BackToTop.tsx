@@ -26,9 +26,10 @@ export default function BackToTop() {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-8 right-8 p-3 bg-primary text-background rounded-full shadow-lg transition-opacity ${
-        isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
+      className={`fixed bottom-24 right-8 z-40 p-3 bg-primary text-background rounded-full shadow-lg transition-all duration-300 hover:scale-110 ${
+        isVisible ? "opacity-100 scale-100" : "opacity-0 scale-0 pointer-events-none"
       }`}
+      aria-label="Back to top"
     >
       <ArrowUp className="h-5 w-5" />
     </button>
