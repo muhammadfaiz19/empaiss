@@ -1,12 +1,12 @@
-import { groq } from '@ai-sdk/groq';
-import { streamText, CoreMessage } from 'ai';
-import { NextRequest, NextResponse } from 'next/server';
+import { groq } from "@ai-sdk/groq";
+import { streamText, CoreMessage } from "ai";
+import { NextRequest, NextResponse } from "next/server";
 
 export const maxDuration = 30;
-export const runtime = 'edge';
+export const runtime = "edge";
 
 type ClientMessage = {
-  role: 'user' | 'assistant';
+  role: "user" | "assistant";
   content: string;
 };
 
@@ -102,12 +102,12 @@ export async function POST(req: NextRequest) {
 
     if (!messages || !Array.isArray(messages)) {
       return new NextResponse(
-        JSON.stringify({ error: 'Invalid messages format' }),
-        { status: 400, headers: { 'Content-Type': 'application/json' } }
+        JSON.stringify({ error: "Invalid messages format" }),
+        { status: 400, headers: { "Content-Type": "application/json" } }
       );
     }
-    
-    const coreMessages: CoreMessage[] = messages.map(msg => ({
+
+    const coreMessages: CoreMessage[] = messages.map((msg) => ({
       role: msg.role,
       content: msg.content,
     }));
@@ -115,15 +115,15 @@ export async function POST(req: NextRequest) {
     let result;
     try {
       result = await streamText({
-        model: groq('gemma2-9b-it'),
+        model: groq("openai/gpt-oss-20b"),
         system: systemPrompt,
         messages: coreMessages,
         temperature: 0.7,
       });
-    } catch (gemmaError) {
-      console.warn('Gemma model failed, switching to fallback:', gemmaError);
+    } catch (error) {
+      console.warn("Primary model failed, switching to fallback:", error);
       result = await streamText({
-        model: groq('llama-3.1-8b-instant'),
+        model: groq("llama-3.1-8b-instant"),
         system: systemPrompt,
         messages: coreMessages,
         temperature: 0.7,
@@ -132,13 +132,13 @@ export async function POST(req: NextRequest) {
 
     return result.toTextStreamResponse();
   } catch (error) {
-    console.error('Chat API Error:', error);
+    console.error("Chat API Error:", error);
     return new NextResponse(
       JSON.stringify({
-        error: 'Internal server error',
-        message: 'Failed to process chat request',
+        error: "Internal server error",
+        message: "Failed to process chat request",
       }),
-      { status: 500, headers: { 'Content-Type': 'application/json' } }
+      { status: 500, headers: { "Content-Type": "application/json" } }
     );
   }
 }
